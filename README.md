@@ -1,7 +1,7 @@
 The To-Do List Web Application is a user-friendly and efficient tool designed to help individuals organize their daily tasks and manage their time effectively. Built using HTML, CSS, JavaScript, and Firebase, this project aims to provide a seamless and intuitive user experience, enabling users to add, edit, delete, and track their tasks with ease.
 
 Getting Started :
-  Clone the Repository: git clone https://github.com/username/todo-app.git
+  Clone the Repository: git clone (https://github.com/shekarlee/TodoApp)
   Install Dependencies: Navigate to the project directory and run npm install if using any npm packages.
   Set Up Firebase: Create a Firebase project, enable Firestore and Authentication, and add the Firebase configuration to your project.
   Configure Firebase: Replace the Firebase configuration in your project with your Firebase project credentials.
