@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    user-select: none;
+    background:linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+    background-size: 300% 150%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.start{
+    height: 90vh;
+    width: 32rem;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4%;
+    box-shadow: 2px 2px 2px 4px rgba(0,0,0,0.4);
+
+  
+}
+.pro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0.7rem;
+}
+.log{
+    height: 2rem;
+    width: 5rem;
+    margin-left: 0.9rem;
+    background-color: purple;
+    color: white;
+    border-radius: 5%;
+}
+h5{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.user{
+    height: 5.5rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.task{
+    height: 2.2rem;
+    width: 75%;
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+}
+.add{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 0.1rem;
+    opacity: 0.7;
+}
+.add1{
+    opacity: 1;
+}
+.add1:hover{
+    cursor:pointer;
+    opacity: 1;
+}
+.all{
+    height: 2rem;
+    width: 5rem;
+    margin-left: 0.9rem;
+    background-color: purple;
+    color: white;
+    border-radius: 5%;
+}
+.main{
+    height: 70%;
+    width: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.main::-webkit-scrollbar{
+    color: red;
+}
+.content{
+    height: 3.3rem;
+    width: 29rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(0,0,0,0.06);
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+
+    border-bottom: 1px solid purple;
+    
+}
+.content::-webkit-scrollbar{
+    color: red;
+}
+
+.content li{
+    width: 21rem;
+    height: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: inline;
+    font-size: 1.3rem;
+    margin-left: 0.1rem;
+    text-align: left; 
+    overflow-x: auto;
+    overflow-y: hidden;  
+    padding-bottom: 0.3rem;
+}
+.content li::-webkit-scrollbar{
+color: red;
+visibility: hidden;
+}
+
+.edit1{
+    height: 3rem;
+    width: 2.5rem;
+    visibility: hidden;
+    margin-left: 0.9rem;
+    position: relative;
+    right: -15%;
+    transition: all 0.3s ease ;
+}
+.del{
+    height: 3rem;
+    width: 2.5rem;
+    visibility: hidden;
+    position: relative;
+    right: -15%;
+    margin-left: 0.1rem;
+    transition: all 0.3s ease ;
+}
+
+.content:hover .edit1{
+   right: 0;
+}
+.content:hover .del{
+    right: 0;
+ }
+
+.load{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 15px solid rgba(0,0,0);
+    border-top: 15px solid #68EACC;
+    animation: anu 1s ease-in-out 0s infinite normal;
+    position: relative;
+    top: 31.2%;
+    left: 39.7%;
+}
+
+@keyframes anu {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.no{
+    font-size: 2rem;
+    color: purple;
+    text-align: center;
+    margin-top: 12rem;
+}
+.msg{
+    text-align: center;
+    position: relative;
+    top: 18%;
+    left: 0.7rem;
+    color: purple;
+
+}
+
+button:hover{
+    cursor:pointer;
+    opacity: 0.7;
+}
+.content img:hover{
+    cursor:pointer;
+    opacity: 0.7;
+}
+
+@media (max-width:500px){
+    .start{
+  
+        width: 90%;
+        
+    }
+    .user{
+        height: 5.5rem;
+    }
+    .task{
+        height: 1.8rem;
+        font-size: 1rem;
+    }
+    .add{
+        height: 2rem;
+        width: 2.3rem;
+    }
+    .all{
+        height: 1.6rem;
+        width: 4.3rem;
+    }
+   
+    .content{
+        height: 3.3rem;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: rgba(0,0,0,0.06);
+        margin-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        
+        border-bottom: 1px solid purple;
+        
+    }
+    .content::-webkit-scrollbar{
+        color: red;
+    }
+    
+    .content li{
+        width: 60%;
+    }
+    
+    .content li::-webkit-scrollbar{
+        color: red;
+        visibility: hidden;
+    }
+   
+    
+    
+  
+    
+
+    .load{
+        top: 7.15rem;
+        left: 36%;
+    }
+    .msg{
+        top: 3rem;
+        left: 0.5rem;
+    }
+    .no{
+        margin-top: 9rem;
+    }
+}
+
+@media (max-width:400px){
+    .load{
+        top: 7rem;
+        left: 25%;
+    }
+}
+
+@media (max-width:332px){
+    .content{
+        height: 3.3rem;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: rgba(0,0,0,0.06);
+        margin-bottom: 0.5rem;
+        padding-left: 0.5rem;
+   
+        border-bottom: 1px solid purple;
+        
+    }
+    
+    .content li{
+        width: 30%;
+    }
+}

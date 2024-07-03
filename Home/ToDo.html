@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="ToDo.css">
+    <link rel="icon" href="../images/todo_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="pro">
+    <img src="../images/toppng.com-file-svg-profile-icon-vector-980x980.png" height="25" width="25">
+    <h5 class="name"></h5>
+    <button class="log">Logout</button>
+    </div>
+    <div class="start">
+    <header>
+        <h1>ToDo App</h1>
+        <div class="user">
+            <input type="text" class="task" placeholder="Enter Task to add">
+            <img src="../images/add1.jpeg" class="add"></img>
+            <p class="num">You have 0 pending tasks</p>
+            <button class="all">Delete All</button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="load"></div>
+        <p class="msg">loading...</p>
+        <p class="no" display="none">...No Tasks Yet...</p>
+    </main>
+    </div>
+    <script src="ToDo.js" type="module"></script>
+</body>
+</html>
